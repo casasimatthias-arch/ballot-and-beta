@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ballotbeta"
+version = "0.1.0"
+description = "Event studies measuring how political and regulatory events move stock prices."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "numpy",
+    "statsmodels",
+    "yfinance",
+    "matplotlib",
+    "plotly",
+    "pyyaml",
+    "openpyxl",
+    "jupyter",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,6 @@
+.venv/
+data/cache/
+reference/*.xlsx
+__pycache__/
+.ipynb_checkpoints/
+*.egg-info/
